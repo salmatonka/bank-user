@@ -9,7 +9,8 @@ import { toast } from "react-toastify";
 import { useEffect, useState,useContext } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { AuthContext } from "../useContext/AuthProvider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+import Footer from "../Components/Shares/Footer/Footer";
 
 const Main = () => {
      // logOut
@@ -273,8 +274,8 @@ const Main = () => {
  
          <div class="lg:pl-4 sm:ml-64">
              <div class="">
-                 {/* <Outlet /> */}
-                 {/* <Footer /> */}
+                 <Outlet /> 
+                  <Footer />
              </div>
          </div>
      </div>
